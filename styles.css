@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 28px 0 10px;
+  font-size: 20px;
+}
+
+#boxplot,
+#barplot,
+#lineplot {
+  margin-bottom: 28px;
+}
+
+/* prevents weird clipping in some browsers */
+svg {
+  overflow: visible;
+}
