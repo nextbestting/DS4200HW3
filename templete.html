@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 3 D3 part </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 3 D3</title>
+
+  <!-- making it look nicer -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+      line-height: 1.3;
+    }
+
+    h1 {
+      margin: 28px 0 10px;
+      font-size: 20px;
+    }
+
+    /* just gives each chart its own space */
+    #boxplot, #barplot, #lineplot {
+      margin-bottom: 28px;
+    }
+
+    /* helps avoid weird clipping sometimes */
+    svg { overflow: visible; }
+  </style>
 </head>
+
 <body>
+  <h1>Solution for the box-plot</h1>
+  <div id="boxplot"></div>
 
-    <h1>Solution for the box-plot</h1>
-    <div id="boxplot"></div>
+  <h1>Solution for the side-by-side bar plot</h1>
+  <div id="barplot"></div>
 
-    <h1>Solution for the side-by-side bar plot</h1>
-    <div id="barplot"></div>
+  <h1>Solution for the line plot</h1>
+  <div id="lineplot"></div>
 
-    <h1>Solution for the line plot</h1>
-    <div id="lineplot"></div>
-    
-    <script src='https://d3js.org/d3.v7.min.js'></script>
-    <script src='templete.js'></script>   
+  <!-- D3 v7 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- use relative path (works on GitHub Pages) -->
+  <script src="./templete.js"></script>
 </body>
 </html>
